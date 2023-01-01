@@ -1,0 +1,32 @@
+title: BUYACOFFEE.NET
+description: Buy someone or an organization a coffee
+google_analytics: 
+plausible_analytics: buyacoffee.net
+include:
+ - _posts
+ - _pages
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+  posts:
+    output: true
+    permalink: /:slug
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"      
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
